@@ -1,3 +1,6 @@
 This workspace gives you a jumpstart 
-to create AWS lambda using java
-to AWS DynamoDB
+- to create jar file using AWS CodeBuild
+- push to S3 using AWSCodePipeline
+- AWS lambda using java
+- lambda reads / writes to AWS DynamoDB
+
