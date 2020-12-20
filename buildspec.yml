@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Pre-Build started on `date`
+      - mvn clean
+  build:
+    commands:
+      - echo "Build started on `date`"
+      - mvn clean package
+  post_build:
+    commands:
+      - echo post Build completed on `date`
+      - mv target/original*.jar
+
+artifacts:
+  files:
+    - target/course-list-lambda-0.0.3-SNAPSHOT.jar
