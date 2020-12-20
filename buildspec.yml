@@ -12,7 +12,6 @@ phases:
   post_build:
     commands:
       - echo post Build completed on `date`
-      - mv target/original*.jar
 
 artifacts:
   files:
