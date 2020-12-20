@@ -1,6 +1,21 @@
 This workspace gives you a jumpstart 
-- to create jar file using AWS CodeBuild
+- to create jar file using AWS CodeBuild using buildspec.yml
 - push to S3 using AWSCodePipeline
 - AWS lambda using java
 - lambda reads / writes to AWS DynamoDB
+- you can add AWS apigateway using the below template
+	#GET
+	#set($inputRoot = $input.path('$'))
+	{
+	"httpMethod" : "$context.httpMethod",
+	"id" : $input.params('id')
+	}
+
+	#POST
+	#set($inputRoot = $input.path('$'))
+	{
+	"httpMethod" : "$context.httpMethod",
+	"course" : $input.json('$')
+	}
+
 
