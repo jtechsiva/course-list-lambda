@@ -15,4 +15,4 @@ phases:
 
 artifacts:
   files:
-    - target/course-list-lambda-0.0.3-SNAPSHOT.jar
+    - target/course-list-lambda*
